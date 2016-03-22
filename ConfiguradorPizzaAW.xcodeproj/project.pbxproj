@@ -19,6 +19,13 @@
 		812D97931C9E448900D029E9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97921C9E448900D029E9 /* InterfaceController.swift */; };
 		812D97951C9E448900D029E9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97941C9E448900D029E9 /* ExtensionDelegate.swift */; };
 		812D97971C9E448900D029E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812D97961C9E448900D029E9 /* Assets.xcassets */; };
+		812D97A91C9F93C200D029E9 /* PizzaWA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97A81C9F93C200D029E9 /* PizzaWA.swift */; };
+		812D97AB1C9F976B00D029E9 /* SegundaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97AA1C9F976B00D029E9 /* SegundaInterfaceController.swift */; };
+		812D97AD1C9F978700D029E9 /* TerceraInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97AC1C9F978700D029E9 /* TerceraInterfaceController.swift */; };
+		812D97AF1C9F97A300D029E9 /* CuartaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97AE1C9F97A300D029E9 /* CuartaInterfaceController.swift */; };
+		812D97B11C9F97B000D029E9 /* QuintaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97B01C9F97B000D029E9 /* QuintaInterfaceController.swift */; };
+		812D97B71CA0905E00D029E9 /* PrimeraInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97B61CA0905E00D029E9 /* PrimeraInterfaceController.swift */; };
+		812D97FE1CA0B9AC00D029E9 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D97FD1CA0B9AC00D029E9 /* RowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,13 @@
 		812D97941C9E448900D029E9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		812D97961C9E448900D029E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812D97981C9E448900D029E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812D97A81C9F93C200D029E9 /* PizzaWA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaWA.swift; sourceTree = "<group>"; };
+		812D97AA1C9F976B00D029E9 /* SegundaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegundaInterfaceController.swift; sourceTree = "<group>"; };
+		812D97AC1C9F978700D029E9 /* TerceraInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerceraInterfaceController.swift; sourceTree = "<group>"; };
+		812D97AE1C9F97A300D029E9 /* CuartaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuartaInterfaceController.swift; sourceTree = "<group>"; };
+		812D97B01C9F97B000D029E9 /* QuintaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuintaInterfaceController.swift; sourceTree = "<group>"; };
+		812D97B61CA0905E00D029E9 /* PrimeraInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeraInterfaceController.swift; sourceTree = "<group>"; };
+		812D97FD1CA0B9AC00D029E9 /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +164,13 @@
 				812D97941C9E448900D029E9 /* ExtensionDelegate.swift */,
 				812D97961C9E448900D029E9 /* Assets.xcassets */,
 				812D97981C9E448900D029E9 /* Info.plist */,
+				812D97A81C9F93C200D029E9 /* PizzaWA.swift */,
+				812D97B61CA0905E00D029E9 /* PrimeraInterfaceController.swift */,
+				812D97AA1C9F976B00D029E9 /* SegundaInterfaceController.swift */,
+				812D97AC1C9F978700D029E9 /* TerceraInterfaceController.swift */,
+				812D97AE1C9F97A300D029E9 /* CuartaInterfaceController.swift */,
+				812D97B01C9F97B000D029E9 /* QuintaInterfaceController.swift */,
+				812D97FD1CA0B9AC00D029E9 /* RowController.swift */,
 			);
 			path = "ConfiguradorPizzaAW WatchKit Extension";
 			sourceTree = "<group>";
@@ -295,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812D97FE1CA0B9AC00D029E9 /* RowController.swift in Sources */,
 				812D97951C9E448900D029E9 /* ExtensionDelegate.swift in Sources */,
 				812D97931C9E448900D029E9 /* InterfaceController.swift in Sources */,
+				812D97AB1C9F976B00D029E9 /* SegundaInterfaceController.swift in Sources */,
+				812D97A91C9F93C200D029E9 /* PizzaWA.swift in Sources */,
+				812D97AD1C9F978700D029E9 /* TerceraInterfaceController.swift in Sources */,
+				812D97B11C9F97B000D029E9 /* QuintaInterfaceController.swift in Sources */,
+				812D97B71CA0905E00D029E9 /* PrimeraInterfaceController.swift in Sources */,
+				812D97AF1C9F97A300D029E9 /* CuartaInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

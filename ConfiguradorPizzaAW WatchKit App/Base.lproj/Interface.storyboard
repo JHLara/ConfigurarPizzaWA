@@ -1,15 +1,193 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--entrada-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="entrada" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Configura tu Pizza" textAlignment="center" id="GcP-oC-8Z8"/>
+                        <button width="1" alignment="left" title="Iniciar" id="ErV-RQ-sBx">
+                            <connections>
+                                <segue destination="kMc-Bl-a4i" kind="push" id="nQu-Lv-tSx"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="69" y="321"/>
+        </scene>
+        <!--primera-->
+        <scene sceneID="zfW-lf-1gy">
+            <objects>
+                <controller identifier="primera" id="kMc-Bl-a4i" customClass="PrimeraInterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Tamaño" id="0EY-WS-ntr"/>
+                        <table alignment="left" id="gOT-ub-1KX">
+                            <items>
+                                <tableRow identifier="primeraTable" id="Hg2-fp-ruN" customClass="RowController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Fw8-qk-Q4V">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="LPb-oU-dg4"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="etiqueta" destination="LPb-oU-dg4" id="leg-QF-aLo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="gOT-ub-1KX" id="NwX-dq-cE2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="293" y="321"/>
+        </scene>
+        <!--segunda-->
+        <scene sceneID="Zuq-C5-If6">
+            <objects>
+                <controller identifier="segunda" id="oDN-Vq-L21" customClass="SegundaInterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Masa" id="q6N-99-Cbp"/>
+                        <table alignment="left" id="6E5-2q-GLT">
+                            <items>
+                                <tableRow identifier="segundaTable" id="7vI-Ed-m7s" customClass="RowController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="25t-Bt-Qy6">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="F1j-OU-M2M"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="etiqueta" destination="F1j-OU-M2M" id="309-in-fkW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="6E5-2q-GLT" id="dRv-1H-Pz5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="510" y="321"/>
+        </scene>
+        <!--tercera-->
+        <scene sceneID="RhF-1d-nxA">
+            <objects>
+                <controller identifier="tercera" id="ZhF-oh-Htk" customClass="TerceraInterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Queso" id="6BJ-Bj-25C"/>
+                        <table alignment="left" id="LIx-jV-yt0">
+                            <items>
+                                <tableRow identifier="terceraTable" id="K5S-sc-FND" customClass="RowController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="cMF-od-gh4">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="JeW-rL-64h"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="etiqueta" destination="JeW-rL-64h" id="Dsz-TP-CiL"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="LIx-jV-yt0" id="eWP-aN-VJh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="721" y="321"/>
+        </scene>
+        <!--cuarta-->
+        <scene sceneID="5vV-kI-spA">
+            <objects>
+                <controller identifier="cuarta" id="ite-aT-cDa" customClass="CuartaInterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Ingredientes" id="1PX-77-j0F"/>
+                        <table alignment="left" id="GBp-m3-Ojz">
+                            <items>
+                                <tableRow identifier="cuartaTable" id="W2d-NW-iyh" customClass="RowController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Sjl-IK-ka0">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="mj6-NF-kw1"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="etiqueta" destination="mj6-NF-kw1" id="xQf-sR-9dZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Siguiente" id="g7C-O2-wcO">
+                            <connections>
+                                <action selector="siguienteBoton" destination="ite-aT-cDa" id="9hN-lN-jQw"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="GBp-m3-Ojz" id="nIx-b1-6J4"/>
+                        <outlet property="siguienteBotonOutlet" destination="g7C-O2-wcO" id="t7i-lj-hs5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="919" y="321"/>
+        </scene>
+        <!--quinta-->
+        <scene sceneID="rZi-ov-I3h">
+            <objects>
+                <controller identifier="quinta" id="5An-M2-Mif" customClass="QuintaInterfaceController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Resumen" id="2jk-9g-Hyp"/>
+                        <table alignment="left" id="sN5-eE-x8G">
+                            <items>
+                                <tableRow identifier="quintaTable" id="yUo-Bd-MX4" customClass="RowController" customModule="ConfiguradorPizzaAW_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="fm7-M2-YVF">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="FBe-5Z-2tQ"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="etiqueta" destination="FBe-5Z-2tQ" id="qwF-MA-Nyz"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Confirmar" id="516-b5-nVH">
+                            <connections>
+                                <action selector="confirmar" destination="5An-M2-Mif" id="5SP-Wi-EVW"/>
+                                <segue destination="BEv-3m-PZA" kind="push" id="fzC-pl-ghS"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Editar" id="R1K-Ws-36h">
+                            <connections>
+                                <action selector="editar" destination="5An-M2-Mif" id="VQ2-8D-UXq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="sN5-eE-x8G" id="oed-lS-Rdo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1156" y="321"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="smp-L9-71U">
+            <objects>
+                <controller id="BEv-3m-PZA">
+                    <items>
+                        <label alignment="left" verticalAlignment="center" text="Pedido Confirmado" textAlignment="center" numberOfLines="2" id="mua-Vr-42l"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1358" y="321"/>
         </scene>
     </scenes>
 </document>
